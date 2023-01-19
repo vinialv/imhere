@@ -4,13 +4,10 @@ import { styles } from "./styles";
 
 type Props = {
   name: string;
+  onRemove: () => void;
 }
 
-export function Participant({ name }:Props) {
-  function handleParticipantRemove() {
-    console.log("participant removed");
-  }
-
+export function Participant({ name, onRemove }:Props) {
   return (
     <View style={styles.container}>
       <View style={styles.participant}>
@@ -21,7 +18,7 @@ export function Participant({ name }:Props) {
         </View>
         <TouchableOpacity
           style={styles.button}
-          onPress={handleParticipantRemove}
+          onPress={onRemove}
         >
           <Text style={styles.buttonText}>-</Text>
         </TouchableOpacity>
