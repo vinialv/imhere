@@ -52,9 +52,9 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.eventName}>Nome do evento</Text>
+      <Text style={styles.eventName}>NLW SETUP</Text>
 
-      <Text style={styles.eventDate}>Segunda, 16 de Janeiro de 2023.</Text>
+      <Text style={styles.eventDate}>De 16 à 20 de janeiro.</Text>
 
       <View style={styles.form}>
         <TextInput
